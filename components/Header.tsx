@@ -1,5 +1,6 @@
 import DarkModeToggle from "./DarkModeToggle";
 import Logo from "./Logo";
+import UserButton from "./UserButton";
 
 const Header = () => {
   return (
@@ -15,6 +16,7 @@ const Header = () => {
 
           {/* Darkmode toggle */}
           <DarkModeToggle/>
+          <UserButton/>
 
         </div>
       </nav>
