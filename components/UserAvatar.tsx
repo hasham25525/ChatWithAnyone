@@ -9,7 +9,7 @@ function UserAvatar({
 }: {
   name: string;
   image: string;
-  className: string;
+  className?: string;
 }) {
   return (
     <Avatar className={cn("bg-white text-black", className)}>

@@ -9,15 +9,10 @@ import {
 } from "@/components/ui/dropdown-menu";
 import UserAvatar from "./UserAvatar";
 
-const UserButton = ({
-  name,
-  image,
-  className,
-}: {
-  name: string;
-  image: string;
-  className: string;
-}) => {
+const UserButton = () => {
+  // Session...
+
+  
   return (
     <DropdownMenu>
       <DropdownMenuTrigger>
