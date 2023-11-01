@@ -1,5 +1,7 @@
 import { CheckIcon } from "lucide-react";
+import Link from "next/link";
 import React from "react";
+import CheckoutButton from "./CheckoutButton";
 
 const tiers = [
   {
@@ -85,8 +87,18 @@ function PricingCards({ redirect }: { redirect: boolean }) {
                   </ul>
                 </div>
               </div>
+
+              {redirect ?(
+                <Link href='/register'
+                className="mt-8 block rounded-md bg-indigo-600 hover:bg-indigo-500 px-3.5 py-2 text-center text-sm font-semibold leading-6 text-white shadow-sm ">
+                    Get Started Today
+                </Link>
+              ):(
+                tier.id && <CheckoutButton/>
+              )}
             </div>
           );
+          
         })}
       </div>
     </div>
