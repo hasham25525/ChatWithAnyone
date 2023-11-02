@@ -1,7 +1,10 @@
 import PricingCards from "@/components/PricingCards";
+import { useSession } from "next-auth/react";
 import React from "react";
 
 function PricingPage() {
+
+  
   return (
     <>
       <div className="isolate overflow-hidden bg-slate-950">
