@@ -6,7 +6,7 @@ import CheckoutButton from "./CheckoutButton";
 const tiers = [
   {
     name: "Starter",
-    id: "starter_ID",
+    id: null,
     href: "#",
     priceMonthly: null,
     description: "Get chattiinng right away with anyone, anywhere!",
@@ -94,7 +94,7 @@ function PricingCards({ redirect }: { redirect: boolean }) {
                     Get Started Today
                 </Link>
               ):(
-                tier.id && <CheckoutButton/>
+                tier.id  && <CheckoutButton/>
               )}
             </div>
           );
